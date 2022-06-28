@@ -11,4 +11,5 @@
     <color name="main">#0091AD</color>
     <color name="secondary">#F4FAFB</color>
     <color name="accent">#007A3D</color>
+    <color name="halftransparent">#800B0B0B</color>
 </resources>

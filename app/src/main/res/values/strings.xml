@@ -2,4 +2,7 @@
     <string name="app_name">PrzUsosLite</string>
     <string name="logo">logo</string>
     <string name="beginButton">Rozpocznij</string>
+    <string name="hello">Witaj</string>
+    <string name="name">Imie Nazwisko</string>
+    <string name="studentStatus">Student</string>
 </resources>

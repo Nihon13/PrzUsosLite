@@ -23,6 +23,11 @@ public class HomeActivity extends AppCompatActivity
 
         imageView = findViewById(R.id.photo);
 
-        Picasso.get().load("").resize(100,100).centerCrop().into(imageView);
+        String url = "";
+
+        if (!url.equals(""))
+        {
+            Picasso.get().load(url).placeholder(R.drawable.ic_baseline_face_24).resize(100,100).centerCrop().into(imageView);
+        }
     }
 }

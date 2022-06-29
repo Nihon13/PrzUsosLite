@@ -5,4 +5,6 @@
     <string name="hello">Witaj</string>
     <string name="name">Imie Nazwisko</string>
     <string name="studentStatus">Student</string>
+    <string name="schedule">Plan zajęć</string>
+    <string name="grades">Oceny</string>
 </resources>

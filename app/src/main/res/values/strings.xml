@@ -7,4 +7,12 @@
     <string name="studentStatus">Student</string>
     <string name="schedule">Plan zajęć</string>
     <string name="grades">Oceny</string>
+    <string name="mondaysym">PN</string>
+    <string name="tuesdaysym">WT</string>
+    <string name="wednesdaysym">ŚR</string>
+    <string name="thursdaysym">CZ</string>
+    <string name="fridaysym">PT</string>
+    <string name="saturdaysym">SB</string>
+    <string name="sundaysym">N</string>
+    <string name="diffdate">Inna data</string>
 </resources>

@@ -15,4 +15,5 @@
     <string name="saturdaysym">SB</string>
     <string name="sundaysym">N</string>
     <string name="diffdate">Inna data</string>
+    <string name="hoursLinker">do</string>
 </resources>

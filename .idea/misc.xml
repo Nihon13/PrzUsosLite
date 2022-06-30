@@ -11,10 +11,14 @@
         <entry key="app/src/main/res/drawable/owl.xml" value="0.21" />
         <entry key="app/src/main/res/drawable/rounded_button.xml" value="0.23" />
         <entry key="app/src/main/res/font/oswald_medium.xml" value="0.3841025641025641" />
+        <entry key="app/src/main/res/layout/activity_grades.xml" value="0.35989583333333336" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35989583333333336" />
         <entry key="app/src/main/res/layout/activity_schedule.xml" value="0.5" />
         <entry key="app/src/main/res/layout/recyclerview_calendarrow.xml" value="0.75" />
+        <entry key="app/src/main/res/layout/recyclerview_graderow.xml" value="0.35885416666666664" />
+        <entry key="app/src/main/res/layout/recyclerview_grades_child_item.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/recyclerview_grades_parent_item.xml" value="0.67" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.23" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.23" />
       </map>

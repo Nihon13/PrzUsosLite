@@ -13,6 +13,7 @@ public class HomeActivity extends AppCompatActivity
 {
     ImageView imageView;
     CardView scheduleCV;
+    CardView gradesCV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,8 +27,10 @@ public class HomeActivity extends AppCompatActivity
 
         imageView = findViewById(R.id.photo);
         scheduleCV = findViewById(R.id.scheduleCard);
+        gradesCV = findViewById(R.id.gradesCard);
 
         scheduleCV.setOnClickListener(v -> goToSchedule());
+        gradesCV.setOnClickListener(v -> goToGrades());
 
         String url = "";
 
@@ -40,6 +43,12 @@ public class HomeActivity extends AppCompatActivity
     private void goToSchedule()
     {
         Intent intent = new Intent(this, ScheduleActivity.class);
+        startActivity(intent);
+    }
+
+    private void goToGrades()
+    {
+        Intent intent = new Intent(this, GradesActivity.class);
         startActivity(intent);
     }
 }

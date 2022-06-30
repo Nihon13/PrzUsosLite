@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.nihon.przusoslite">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +16,9 @@
         android:theme="@style/Theme.PrzUsosLite"
         tools:targetApi="31">
         <activity
+            android:name=".GradesActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
@@ -27,9 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".ScheduleActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".ScheduleActivity"
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

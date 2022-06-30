@@ -2,7 +2,6 @@ package com.nihon.przusoslite;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -40,7 +39,7 @@ public class ScheduleActivity extends AppCompatActivity
             getSupportActionBar().hide();
         }
 
-        RecyclerView recyclerView = findViewById(R.id.calendarRecycler);
+        RecyclerView recyclerView = findViewById(R.id.scheduleRecycler);
 
         daysOfWeek[0] = getString(R.string.sundaysym);
         daysOfWeek[1] = getString(R.string.mondaysym);

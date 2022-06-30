@@ -65,72 +65,79 @@
         app:layout_constraintTop_toBottomOf="@id/currentDate">
 
         <TextView
+            android:id="@+id/day_1_symbol"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/mondaysym"
+            android:text="D1"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/day_2_symbol"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/tuesdaysym"
+            android:text="D2"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/day_3_symbol"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/wednesdaysym"
+            android:text="D3"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/day_4_symbol"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/thursdaysym"
+            android:text="D4"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/day_5_symbol"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/fridaysym"
+            android:text="D5"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/day_6_symbol"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/saturdaysym"
+            android:text="D6"
             android:textAlignment="center"
-            android:textColor="@color/accent"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/day_7_symbol"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/sundaysym"
+            android:text="D7"
             android:textAlignment="center"
-            android:textColor="@color/accent"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 

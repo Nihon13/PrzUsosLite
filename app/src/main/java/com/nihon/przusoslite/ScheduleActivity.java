@@ -2,6 +2,7 @@ package com.nihon.przusoslite;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -16,12 +17,16 @@ import java.util.Calendar;
 
 public class ScheduleActivity extends AppCompatActivity
 {
-    private TextView[] days = new TextView[7];
+    private final int daysCount = 7;
+    private TextView[] days = new TextView[daysCount];
+    private TextView[] daysSymbol = new TextView[daysCount];
+    private int activeDay = 0;
     private TextView currentDate;
     private Button changeDateButton;
 
     private DatePickerDialog datePickerDialog;
     private Calendar calendar;
+    private String[] daysOfWeek = new String[daysCount];
 
     private ArrayList<ScheduleActivityModel> scheduleActivityModels = new ArrayList<>();
 
@@ -37,6 +42,14 @@ public class ScheduleActivity extends AppCompatActivity
 
         RecyclerView recyclerView = findViewById(R.id.calendarRecycler);
 
+        daysOfWeek[0] = getString(R.string.sundaysym);
+        daysOfWeek[1] = getString(R.string.mondaysym);
+        daysOfWeek[2] = getString(R.string.tuesdaysym);
+        daysOfWeek[3] = getString(R.string.wednesdaysym);
+        daysOfWeek[4] = getString(R.string.thursdaysym);
+        daysOfWeek[5] = getString(R.string.fridaysym);
+        daysOfWeek[6] = getString(R.string.saturdaysym);
+
         days[0] = findViewById(R.id.day_1);
         days[1] = findViewById(R.id.day_2);
         days[2] = findViewById(R.id.day_3);
@@ -44,6 +57,20 @@ public class ScheduleActivity extends AppCompatActivity
         days[4] = findViewById(R.id.day_5);
         days[5] = findViewById(R.id.day_6);
         days[6] = findViewById(R.id.day_7);
+
+        daysSymbol[0] = findViewById(R.id.day_1_symbol);
+        daysSymbol[1] = findViewById(R.id.day_2_symbol);
+        daysSymbol[2] = findViewById(R.id.day_3_symbol);
+        daysSymbol[3] = findViewById(R.id.day_4_symbol);
+        daysSymbol[4] = findViewById(R.id.day_5_symbol);
+        daysSymbol[5] = findViewById(R.id.day_6_symbol);
+        daysSymbol[6] = findViewById(R.id.day_7_symbol);
+
+        for (int i = 0; i < daysCount; i++)
+        {
+            int finalI = i;
+            days[i].setOnClickListener(v -> activateDay(finalI));
+        }
 
         calendar = Calendar.getInstance();
 
@@ -75,6 +102,8 @@ public class ScheduleActivity extends AppCompatActivity
             setDays(calendar);
         };
 
+        calendar = Calendar.getInstance();
+
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
@@ -90,9 +119,19 @@ public class ScheduleActivity extends AppCompatActivity
 
         currentDate.setText(text);
 
-        for (int i = 0; i < 7; i++)
+        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK) - 1;
+
+        for (int i = 0; i < daysCount; i++)
         {
             days[i].setText(new SimpleDateFormat("d").format(calendar.getTime()));
+            if (dayOfWeek+i >= daysCount)
+            {
+                daysSymbol[i].setText(daysOfWeek[dayOfWeek+i-daysCount]);
+            }
+            else
+            {
+                daysSymbol[i].setText(daysOfWeek[dayOfWeek+i]);
+            }
             calendar.add(Calendar.DAY_OF_MONTH, 1);
         }
     }
@@ -100,6 +139,16 @@ public class ScheduleActivity extends AppCompatActivity
     private void addScheduleActivity(Time startTime, Time endTime, String activityName, String prof, String room)
     {
         scheduleActivityModels.add(new ScheduleActivityModel(startTime, endTime, activityName, prof, room));
+    }
+
+    private void activateDay(int index)
+    {
+        if (activeDay != index)
+        {
+            days[activeDay].setBackground(null);
+            activeDay = index;
+            days[activeDay].setBackground(getResources().getDrawable(R.drawable.activeborder));
+        }
     }
 
 }

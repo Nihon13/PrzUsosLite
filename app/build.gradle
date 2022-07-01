@@ -3,6 +3,9 @@ plugins {
 }
 
 android {
+    def localProperties = new Properties()
+    localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
     compileSdk 32
 
     defaultConfig {
@@ -13,6 +16,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "USOS_API_KEY", localProperties.getProperty("USOS_KEY")
+        buildConfigField "String", "USOS_API_SECRET", localProperties.getProperty("USOS_SECRET")
     }
 
     buildTypes {
@@ -36,4 +41,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.squareup.picasso:picasso:2.8'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.scribejava:scribejava-apis:6.4.1'
 }

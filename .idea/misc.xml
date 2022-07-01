@@ -15,6 +15,8 @@
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35989583333333336" />
         <entry key="app/src/main/res/layout/activity_schedule.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_usos_web_authorization.xml" value="0.19537037037037036" />
         <entry key="app/src/main/res/layout/recyclerview_calendarrow.xml" value="0.75" />
         <entry key="app/src/main/res/layout/recyclerview_graderow.xml" value="0.35885416666666664" />
         <entry key="app/src/main/res/layout/recyclerview_grades_child_item.xml" value="0.67" />

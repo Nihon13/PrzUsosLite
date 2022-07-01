@@ -60,6 +60,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="8dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/currentDate">
@@ -150,6 +151,7 @@
         android:orientation="horizontal"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/week">
@@ -159,12 +161,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/activeborder"
             android:text="1"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:background="@drawable/activeborder" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/day_2"
@@ -238,12 +240,11 @@
         android:id="@+id/scheduleRecycler"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@color/main"
         android:padding="8dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/days"
-        android:background="@color/main"/>
+        app:layout_constraintTop_toBottomOf="@id/days" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

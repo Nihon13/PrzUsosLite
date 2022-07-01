@@ -108,7 +108,8 @@
                         android:layout_margin="3dp"
                         android:text="Imie Nazwisko"
                         android:textAlignment="viewEnd"
-                        android:textSize="11sp" />
+                        android:textSize="11sp"
+                        android:visibility="invisible" />
 
                     <TextView
                         android:id="@+id/room"

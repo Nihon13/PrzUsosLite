@@ -14,7 +14,7 @@
     <string name="fridaysym">PT</string>
     <string name="saturdaysym">SB</string>
     <string name="sundaysym">N</string>
-    <string name="diffdate">Inna data</string>
+    <string name="diffdate">Zmień date</string>
     <string name="hoursLinker">do</string>
     <string name="semester">Semestr</string>
 </resources>

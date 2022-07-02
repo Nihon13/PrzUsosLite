@@ -3,9 +3,9 @@ package com.nihon.przusoslite;
 public class GradesChildModel
 {
     private String activityName;
-    private float grade;
+    private String grade;
 
-    public GradesChildModel(String activityName, float grade)
+    public GradesChildModel(String activityName, String grade)
     {
         this.activityName = activityName;
         this.grade = grade;
@@ -16,7 +16,7 @@ public class GradesChildModel
         return activityName;
     }
 
-    public float getGrade()
+    public String getGrade()
     {
         return grade;
     }
